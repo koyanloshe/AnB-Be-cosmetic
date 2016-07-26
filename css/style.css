@@ -1,0 +1,824 @@
+body{
+  	font-family: 'Josefin Sans', sans-serif !important;
+}
+
+/*Font section*/
+
+h1{
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+h3{ 
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+h4{ 
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+h5{ 
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+h6{ 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.nav-bar{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*Font section end*/
+
+/*Text color section*/
+
+.brand{
+	color: #A2C5C1;
+}
+
+.white{
+	color: #ffffff;
+}
+
+.black{
+	color: #333333;
+}
+
+/*Text color section end*/
+
+/*Background color section*/
+.bg-brand{
+	background-color: #A2C5C1;
+}
+
+.bg-white{
+	background-color: #ffffff;
+}
+
+.bg-black{
+	background-color: #333333;
+}
+
+.bg-gray{
+	background-color: #eeeeee;
+}
+/*Background color section end*/
+
+/*button section*/
+
+.btn-default{
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color:#ffffff;
+  background-color: #A2C5C1; 
+  border-radius: 5px;
+}
+
+.btn-primary{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #A2C5C1;
+    border-radius: 5px;
+    color: #A2C5C1;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover{
+	color: #ffffff;
+    background-color: #A2C5C1;
+}
+
+.btn-rect{
+	padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: transparent;
+    text-transform: uppercase;	
+}
+
+/*button section end*/
+/*tooltip start*/
+
+.brand-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#A2C5C1; }
+
+.brand-tooltip + .tooltip > .tooltip-inner {background-color: #A2C5C1;}
+
+/*tooltip end*/
+
+/*bloc to be used with row or container - applied directly to a section to space out a seciton*/
+
+.bloc-lg{
+	margin-top: 240px;
+	margin-bottom: 150px;
+}
+
+.bloc-md{
+	margin-top: 120px;
+	margin-bottom: 40px;
+}
+
+.bloc-sm{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*block end*/
+
+/*paddding can be used anywhere- handled independently for mobile*/
+
+/*top padding*/
+.padtblg{
+	padding-top: 120px;
+}
+
+.padtslg{
+	padding-top: 80px;
+}
+
+.padtlg{
+	padding-top: 70px;
+}
+
+.padtmd{
+	padding-top: 60px;
+}
+
+.padtsm{
+	padding-top: 20px;
+}
+
+.padtxs{
+	padding-top: 10px;
+}
+/*top padding end*/
+
+/*bottom padding*/
+.padbblg{
+	padding-bottom: 120px;
+}
+
+.padbslg{
+	padding-bottom: 80px;
+}
+
+.padblg{
+	padding-bottom: 60px;
+}
+
+.padbmd{
+	padding-bottom: 50px;
+}
+
+.padbsm{
+	padding-bottom: 40px;
+}
+
+.padbxs{
+	padding-bottom: 15px;
+}
+/*bottom padding end*/
+
+/*left padding*/
+
+.padllg{
+	padding-left: 90px;
+}
+
+.padlmd{
+	padding-left: 50px;
+}
+
+.padlsm{
+	padding-left: 40px;
+}
+
+.padlxs{
+	padding-left: 20px;
+}
+/*left padding end*/
+
+/*right padding*/
+
+.padrlg{
+	padding-right: 90px;
+}
+
+.padrmd{
+	padding-right: 50px;
+}
+
+.padrsm{
+	padding-right: 40px;
+}
+
+.padrxs{
+	padding-right: 20px;
+}
+/*right padding end*/
+
+/*left right padding*/
+.padlrlg{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/*left right padding end*/
+
+/*zero padding*/
+.pad0{
+	padding: 0px;
+}
+
+.padt0{
+	padding-top: 0px;
+}
+
+.padb0{
+	padding-bottom: 0px;
+}
+
+.padl0{
+	padding-left: 0px;
+}
+
+.padr0{
+	padding-right: 0px;
+}
+
+.padtb0{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.padlr0{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/*zero padding end*/
+/*padding section end*/
+
+/*Margin section*/
+
+/*top margin*/
+.martblg{
+	margin-top: 120px;
+}
+
+.martslg{
+	margin-top: 80px;
+}
+
+.martlg{
+	margin-top: 70px;
+}
+
+.martmd{
+	margin-top: 60px;
+}
+
+.martsm{
+	margin-top: 20px;
+}
+
+.martxs{
+	margin-top: 10px;
+}
+/*top margin end*/
+
+/*bottom margin*/
+.marbblg{
+	margin-bottom: 120px;
+}
+
+.marbslg{
+	margin-bottom: 80px;
+}
+
+.marblg{
+	margin-bottom: 60px;
+}
+
+.marbmd{
+	margin-bottom: 50px;
+}
+
+.marbsm{
+	margin-bottom: 40px;
+}
+
+.marbxs{
+	margin-bottom: 15px;
+}
+/*bottom margin end*/
+
+/*left margin*/
+
+.marllg{
+	margin-left: 90px;
+}
+
+.marlmd{
+	margin-left: 50px;
+}
+
+.marlsm{
+	margin-left: 40px;
+}
+
+.marlxs{
+	margin-left: 20px;
+}
+/*left margin end*/
+
+/*right margin*/
+
+.marrlg{
+	margin-right: 90px;
+}
+
+.marrmd{
+	margin-right: 50px;
+}
+
+.marrsm{
+	margin-right: 40px;
+}
+
+.marrxs{
+	margin-right: 20px;
+}
+/*right margin end*/
+
+/*left right margin*/
+.marlrlg{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+/*left right margin end*/
+
+/*zero margin*/
+.mar0{
+	margin: 0px;
+}
+
+.mart0{
+	margin-top: 0px;
+}
+
+.marb0{
+	margin-bottom: 0px;
+}
+
+.marl0{
+	margin-left: 0px;
+}
+
+.marr0{
+	margin-right: 0px;
+}
+
+.martb0{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.marlr0{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*zero margin end*/
+
+/*hr section*/
+hr
+{
+  border-top: 2px solid #A2C5C1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*hr section*/
+
+/*id section*/
+#firstbg{
+margin-top: -2%;
+background-image: url('../img/landing-banner.jpg');  
+background-repeat: no-repeat;
+}
+
+#secondbg{
+margin-top: -2%;
+/*background-size: cover;*/
+background-image: url('../img/introbanner.jpg');  
+background-repeat: no-repeat;
+}
+#thirdbg{
+margin-top: -2%;
+/*background-size: cover;*/
+background-image: url('../img/bg3banner.jpg');  
+background-repeat: no-repeat;
+}
+#fifthbg{
+margin-top: -2%;
+/*background-size: cover;*/
+background-image: url('../img/carousalbanner.jpg');  
+background-repeat: no-repeat;
+}
+/*id section end*/
+
+/*border section*/
+.right-border{
+	border-right: 1px solid #A2C5C1;
+}
+.bord6{
+	border:6px solid #A2C5C1;
+}
+
+/*border section end*/
+
+/*font sizes*/
+.f22{
+	font-size: 22px;
+}
+.f25
+{
+	font-size: 25px;
+}
+/*font sizes end*/
+/* navigation bar */
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+.navbar-default{
+  border-color: rgba(0,0,0,0);
+}
+
+.navbar-brand{
+  padding: 0px 0px 0px 15px;
+}
+
+.navbar{
+  margin-bottom: initial;
+  min-height: 100px;
+}
+
+nav{
+  z-index: 300;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+    width: 220px;
+}
+
+.carousel{
+  z-index: 10;
+}
+
+/*.carousel-inner>.item>img{
+  filter: brightness(0.7);
+  min-width: 100%;
+}
+*/
+
+/*.kamal{
+  background-image: url('../img/kamal.jpg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 240px;
+}*/
+
+.project{
+  right:10%;
+  left:60%;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/* sliding menu*/
+
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    padding-top: 0px;
+    left: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: orange
+}
+.navbar-header {
+    position: relative
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) { 
+  #slide-nav .container {
+      margin: 0;
+      padding: 0!important;
+  }
+  #slide-nav .navbar-header {
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+  #slide-nav .navbar.slide-active {
+      position: absolute;
+      width: 80%;
+      top: -1px;
+      z-index: 1000;
+  }
+  #slide-nav #slidemenu {
+      background: #f7f7f7;
+      left: -100%;
+      width: 80%;
+      min-width: 0;
+      position: absolute;
+      padding-left: 0;
+      z-index: 2;
+      top: -8px;
+      margin: 0;
+  }
+  #slide-nav #slidemenu .navbar-nav {
+      min-width: 0;
+      width: 100%;
+      margin: 0;
+  }
+  #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+      min-width: 0;
+      width: 80%;
+      white-space: normal;
+  }
+  #slide-nav {
+      border-top: 0
+  }
+  #slide-nav.navbar-inverse #slidemenu {
+      background: #333
+  }
+  /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+  #slide-nav #navbar-height-col {
+      position: fixed;
+      top: 0;
+      height: 100%;
+      width: 80%;
+      left: -80%;
+      background: #eee;
+  }
+  #slide-nav.navbar-inverse #navbar-height-col {
+      background: #333;
+      z-index: 1;
+      border: 0;
+  }
+  #slide-nav .navbar-form {
+      width: 100%;
+      margin: 8px 0;
+      text-align: center;
+      overflow: hidden;
+      /*fast clearfixer*/
+  }
+  #slide-nav .navbar-form .form-control {
+      text-align: center
+  }
+  #slide-nav .navbar-form .btn {
+      width: 100%
+  }
+}
+@media (min-width:768px) { 
+  #page-content {
+      left: 0!important
+  }
+  .navbar.navbar-fixed-top.slide-active {
+      position: fixed
+  }
+  .navbar-header {
+      left: 0!important
+  }
+}
+
+/*sticky navbar*/
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 70px; 
+	z-index: 1;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+}
+section {
+	height: 100vh;
+}
+/* Screens Settings */
+#screen1 {	
+	background: #43b29d;
+}
+
+#screen1 p {
+	padding-top: 200px;
+}
+
+#screen2 {
+	background: #efc94d;
+}
+
+#screen3 {
+	background: #e1793d;
+}
+
+/*sticky navbar end*/
+
+/*form section*/
+.form-control{
+  height: inherit;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  font-size: 28px;
+  color: #A2C5C1;
+  font-weight: 600;
+  line-height: 28px;
+  border: none;
+  -webkit-box-shadow:none;
+}
+
+/*form section end*/
+
+/*placeholder section*/
+input::-webkit-input-placeholder {
+color: #A2C5C1 !important;
+background-color: white;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #A2C5C1 !important;  
+background-color: white;
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #A2C5C1 !important;  
+background-color: white;
+}
+ 
+input:-ms-input-placeholder {  
+color: #A2C5C1 !important;  
+background-color: white;
+}
+/*placeholder section end*/
+
+/*carousal start*/
+
+/*.carousel-control.left
+{
+  background-color: transparent;
+  background-image:none;
+}
+
+.carousel-control.right
+{
+  background-color: transparent;
+  background-image:none; 
+}
+*/
+/*.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }*/
+
+/*carousal end*/
+
+/*display setting*/
+.desktop{
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
+/*display setting end*/
+
+/* animations */
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+/* animations END*/
+
+
+/*mobile adjustment*/
+@media (max-width: 768px){
+.desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+ }
+/*mobile adjustment end*/

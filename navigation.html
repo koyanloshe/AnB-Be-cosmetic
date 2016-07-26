@@ -1,0 +1,171 @@
+  <script>
+    $(document).ready(function () {
+
+
+    //stick in the fixed 100% height behind the navbar but don't wrap it
+    $('#slide-nav.navbar .container').append($('<div id="navbar-height-col"></div>'));
+
+    // Enter your ids or classes
+    var toggler = '.navbar-toggle';
+    var pagewrapper = '#page-content';
+    var navigationwrapper = '.navbar-header';
+    var menuwidth = '100%'; // the menu inside the slide menu itself
+    var slidewidth = '80%';
+    var menuneg = '-100%';
+    var slideneg = '-80%';
+
+
+    $("#slide-nav").on("click", toggler, function (e) {
+
+        var selected = $(this).hasClass('slide-active');
+
+        $('#slidemenu').stop().animate({
+            left: selected ? menuneg : '0px'
+        });
+
+        $('#navbar-height-col').stop().animate({
+            left: selected ? slideneg : '0px'
+        });
+
+        $(pagewrapper).stop().animate({
+            left: selected ? '0px' : slidewidth
+        });
+
+        $(navigationwrapper).stop().animate({
+            left: selected ? '0px' : slidewidth
+        });
+
+
+        $(this).toggleClass('slide-active', !selected);
+        $('#slidemenu').toggleClass('slide-active');
+
+
+        $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+
+
+    });
+
+
+    var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+
+
+    $(window).on("resize", function () {
+
+        if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+            $(selected).removeClass('slide-active');
+        }
+
+
+    });
+
+
+
+
+});
+  </script>
+  <nav class="navbar navbar-default " id="slide-nav" style="background:transparent" >
+    <div class="row">
+      <div class="col-md-12 col-lg-offset-0 col-lg-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-0">
+        <div class="navbar-header">        
+          <div class="row">
+            <div class="col-xs-3 pad0 mobile">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-menu-hamburger black f22" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="col-xs-6 col-md-11 col-lg-12 col-sm-2 col-sm-offset-0">
+              <a id="logo" class="navbar-brand " href="index.html" ><img class="img-responsive padlxs" src="img/nav-logo1.png" alt="logo"></a>
+            </div>
+            <!-- <div class="col-xs-offset-1 col-xs-2 padsm mobile">
+              <a href="tel:+919930330300"><span class="glyphicon glyphicon-earphone tc-black mid" aria-hidden="true"></span></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="slidemenu">
+        <div class="col-sm-10 col-sm-offset-2 padrxs" style="margin-top:-30px;">
+          <ul class="nav navbar-nav nav-bar white  animated fadeIn">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-us.html">About Us</a>
+            </li>
+            <li>
+              <a href="treatments.html">Treatments</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OUR CLINICS<span class="caret"></span></a>
+              <ul class="dropdown-menu pad0">
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Ongoing</a>
+                  <ul class="dropdown-menu">
+                    <!-- <li><a tabindex="-1" href="#">Second level</a></li> -->
+                    <!-- <li class="dropdown-submenu"> -->
+                    <li>
+                      <a href="integrated-kamal.html">Integrated Kamal</a>
+                      <!-- <ul class="dropdown-menu">
+                          <li><a href="#">Kamal</a></li>
+                        <li><a href="#">Kamal</a></li>
+                      </ul> -->
+                    </li>
+                    <li><a href="#">Integrated Arya</a></li>
+                    <li><a href="#">Integrated Bhoomi</a></li>
+                    <li><a href="#">Integrated Ahana</a></li>
+                    <li><a href="#">Integrated Kavya</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Upcoming</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="project-page.html">Integrated Aadya</a></li>
+                    <li><a href="#">Integrated Nestor</a></li>
+                    <li><a href="#">Integrated Asmi</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Commercial</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="project-page.html">Integrated Arcade</a></li>
+                    <li><a href="#">Integrated Business Park I</a></li>
+                    <li><a href="#">Integrated Business Park II</a></li>
+                    <li><a href="#">Nine H.Q.</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a tabindex="-1" href="community-housing.html">Community Housing</a>
+                </li>
+                <li class="dropdown">
+                  <a tabindex="-1" href="completed.html">Completed</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG<span class="caret"></span></a>
+              <ul class="dropdown-menu pad0">
+                
+                <li><a href="home-loans.html">Home Loans</a></li>
+                <li><a href="nri-guide.html">NRI Guide</a></li>
+                <li><a href="duty.html">Stamp Duty & Registration</a></li>
+                <li><a href="tax-benefits.html">Tax Benefits</a></li>
+                <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </li>
+            <li><a href="media.html">GALLERY </a></li>
+          <!--   <li><a href="http://blog.groupintegrated.com">Blog </a></li>
+            <li><a href="contact-us.html">Contact Us </a></li>
+            <li class="desk ipad"><a href="contact-us.html" class="desk ipad"><i class="grey-fa fa fa-envelope desk ipad" aria-hidden="true"></i></a></li>
+            <li class="desk ipad"><a href="contact-us.html" class="desk ipad"><i class="grey-fa fa fa-phone desk ipad" aria-hidden="true"></i></a></li> -->
+          </ul>
+            <div  style="float:right;">
+              <a href="#contact"><button class="btn btn-rect">BOOK FREE CONSULTATION</button></a>
+          </div>  
+          </div>
+              
+    </div> 
+   <!--  <div class="col-sm-offset-1 col-sm-2 col-xs-offset-2 col-xs-8 animated fadeIn">
+          <a href="#contact"><button class="btn btn-rect">BOOK FREE CONSULTATION</button></a>
+    </div>       -->
+  </div>
+</nav>
